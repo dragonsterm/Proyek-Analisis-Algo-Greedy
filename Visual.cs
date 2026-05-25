@@ -22,7 +22,6 @@ public static class Visual
     public static Label UnoptCapText = null!;
     public static Label OptCapText = null!;
 
-    // Menghentikan efek kedap-kedip (Flickering) pada C# WinForms
     public static void EnableDoubleBuffered(Control control)
     {
         typeof(Control).InvokeMember("DoubleBuffered",
@@ -37,7 +36,7 @@ public static class Visual
 
         MainWindow = new Form
         {
-            Text = "Greedy Fractional Knapsack",
+            Text = "Greedy Algorithm Visualization",
             Size = new Size(1000, 930),
             BackColor = Color.FromArgb(13, 13, 17),
             StartPosition = FormStartPosition.CenterScreen,

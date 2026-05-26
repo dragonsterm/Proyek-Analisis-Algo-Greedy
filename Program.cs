@@ -137,7 +137,7 @@ async Task RunUnoptimizedGreedy(CancellationToken token)
             if (usedItems[i]) continue;
             token.ThrowIfCancellationRequested();
             
-            // operasi increment dan update gui
+            // increment dan update gui
             _unoptimizedOps++;
             
             Visual.MainWindow.Invoke(() => { 
